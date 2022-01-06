@@ -1,15 +1,14 @@
 <template>
-    <div class="login">
+    <div class="main">
 
-        <div class="info">
-            <h1 class="title-login">Titulo</h1>
-            <p>Login</p>
+        <div class="login">
+            <div class="content-login">
+                <header>
+                    <h1>Login do sistema</h1>
+                </header>
+            </div>
         </div>
 
-        <div class="footer">
-            <h1>Rodapé</h1>
-        </div>
-      
     </div>
 </template>
 <script>

@@ -1,9 +1,14 @@
 <template>
-    <p>Home Component</p>
+    <DashboardComponent />
 </template>
 <script>
-export default {
+import DashboardComponent from '../Dashboard/DashboardComponent';
 
+
+export default {
+    components:{
+        DashboardComponent,
+    }
 }
 </script>
 

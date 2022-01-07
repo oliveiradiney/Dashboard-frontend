@@ -1,6 +1,6 @@
 <template>
     <div class="navbar">
-        <h3 class="logo"><i class="fa fa-image"></i> Logo</h3>
+        <h3 class="logo">Dashboard</h3>
         <a href="#" @click.prevent="logout" class="logout">Sair <i class="fa fa-sign-out-alt"></i></a>
     </div>
 </template>

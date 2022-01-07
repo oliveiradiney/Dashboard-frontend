@@ -1,7 +1,7 @@
 <template>
     <DashboardComponent>
         <div slot="slot-pages" class="content-pages">
-            <p>Inicio</p>
+            <p>Products</p>
         </div>
     </DashboardComponent>
 </template>

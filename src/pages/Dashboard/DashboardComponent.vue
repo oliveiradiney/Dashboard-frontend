@@ -10,7 +10,8 @@
            </div>
 
            <div class="pages">
-               pages
+               <!-- m 12:06 -->
+               <slot name="slot-pages"></slot>
            </div>
        </div>
     </div>

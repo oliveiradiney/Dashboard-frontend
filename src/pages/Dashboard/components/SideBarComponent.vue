@@ -13,11 +13,10 @@
        
         <div class="menu">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><router-link :to="{name: 'home'}"><i class="fa fa-home icon"></i> Inicio</router-link></li>
+                <li><router-link :to="{name: 'products'}"><i class="fa fa-box icon"></i> Produtos</router-link></li>
+                <li><router-link :to="{name: 'products'}"><i class="fa fa-store icon"></i> Vendas</router-link></li>
+                <li><router-link :to="{name: 'products'}"><i class="fa fa-chart-bar icon"></i> Relátorios</router-link></li>
             </ul>
         </div>
     </div>
@@ -39,38 +38,61 @@ export default {
         align-items: center;
         padding: 25px 5px;
         margin-top: 60px;
-    }
+    
 
-    .avatar{
-        margin-right: 10px;
+        .avatar{
+            margin-right: 10px;
 
-        span{
-            display: block;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color:#CCC;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            color: #666666;
+            span{
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color:#CCC;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: #666666;
+            }
+        }
+
+        .info{
+
+            p{
+                margin: 0;
+                color: #fff;
+            }
+            .name{
+                font-size: 14px;
+            }
+            .status{
+            
+                font-size: 10px;
+            }
         }
     }
+    .menu{
+        padding: 10px;
+        margin-top: 15px;
 
-    .info{
+        ul li{
 
-        p{
-            margin: 0;
-            color: #fff;
+            margin: 15px 0;
+            font-size: 18px;
+            list-style: none;
+            font-weight: 200;
+
+            a{
+                color:#fff;
+                text-decoration: none;
+                .icon{
+                    margin-right: 15px;
+                }
+            }
         }
-        .name{
-             font-size: 14px;
-        }
-        .status{
-           
-            font-size: 10px;
-        }
+
+        
     }
 
 }

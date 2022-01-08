@@ -1,7 +1,10 @@
 <template>
     <DashboardComponent>
         <div slot="slot-pages" class="content-pages">
-            <p>Products</p>
+            <header class="title_pages">
+                <p>Produtos</p>
+            </header>
+
         </div>
     </DashboardComponent>
 </template>
@@ -10,12 +13,12 @@ import DashboardComponent from '../Dashboard/DashboardComponent';
 
 
 export default {
+    name: 'ProductComponent',
+    
     components:{
         DashboardComponent,
     }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style lang="scss" src="./style.scss" scoped />

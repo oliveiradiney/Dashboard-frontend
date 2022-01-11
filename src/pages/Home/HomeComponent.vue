@@ -26,6 +26,13 @@
                 
             </div>
             
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <ListsComponent />
+                    </div>
+                </div>
+            </div>
           
         </div>
     </DashboardComponent>
@@ -33,11 +40,14 @@
 <script>
 import DashboardComponent from '../Dashboard/DashboardComponent';
 import CardsComponent from '../../components/CardsComponent';
+import ListsComponent from '../../components/ListsComponent'
 
 export default {
+    name: 'HomeComponent',
     components:{
         DashboardComponent,
-        CardsComponent
+        CardsComponent,
+        ListsComponent
     }
 }
 </script>

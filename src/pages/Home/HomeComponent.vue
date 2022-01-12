@@ -29,7 +29,12 @@
             <div class="mt-5">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <ListsComponent :users='users'/>
+                        <ListsComponent :data='users' description='Clientes' :columns="['Nome', 'E-mail']" />
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <ListsComponent :data='users' description='Produtos' :columns="['Nome', 'Valor']" />
+                        
                     </div>
                 </div>
             </div>
@@ -38,6 +43,8 @@
     </DashboardComponent>
 </template>
 <script>
+
+/* eslint-disable */
 import DashboardComponent from '../Dashboard/DashboardComponent';
 import CardsComponent from '../../components/CardsComponent';
 import ListsComponent from '../../components/ListsComponent'

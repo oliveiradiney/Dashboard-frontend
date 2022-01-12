@@ -1,7 +1,7 @@
 <template>
     <div class="lists">
         <div class="top">
-            <p><strong>Clientes</strong></p>
+            <p><strong>{{description}}</strong> <span class="badge bg-info">{{ data.length }}</span></p>
             <hr>
         </div>
 
@@ -10,12 +10,12 @@
                 <thead>
                     <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">E-mail</th>
+                    <th scope="col">{{ columns[0] }}</th>
+                    <th scope="col">{{ columns[1] }}</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="user in users" :key="user.id">
+                    <tr v-for="user in data" :key="user.id">
                     <th scope="row"><p class="users">{{ user.id }}</p></th>
                     <td><p class="users">{{ user.name }}</p></td>
                     <td><p class="users">{{ user.email }}</p></td>
@@ -32,7 +32,9 @@
 export default {
     name: 'ListsComponent',
     props: {
-        users: Array,
+        data: Array,
+        description: String,
+        columns: {},
     }
 }
 </script>

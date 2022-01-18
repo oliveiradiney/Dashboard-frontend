@@ -2,7 +2,7 @@
     <DashboardComponent>
         <div slot="slot-pages" class="content-pages">
             <header class="title_pages">
-                <p>Produtos</p>
+                <p>Clientes</p>
             </header>
 
         </div>
@@ -13,7 +13,7 @@ import DashboardComponent from '../Dashboard/DashboardComponent';
 
 
 export default {
-    name: 'ProductsComponent',
+    name: 'ClientsComponent',
     
     components:{
         DashboardComponent,
